@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<ImageView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/mian_bar"
+        android:scaleType="fitXY"
+        />
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#E2CF8B"
+            android:layout_below="@id/bar"
+            />
+    <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5E49F"
+            android:layout_below="@id/view"
+            android:divider="@null"
+            android:cacheColorHint="#00000000"
+            ></ListView>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F5E49F"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E2CF8B"
+                />
+
+        <ImageButton
+                android:id="@+id/add"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/add"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:background="@null"
+                />
+    </LinearLayout>
+
+</RelativeLayout>
